@@ -1,0 +1,248 @@
+/* Global Styles */
+:root {
+  --font: "Nunito Sans", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.color {
+  color: #e65f78;
+}
+.b-color {
+  border-color: rgb(207, 207, 213) !important;
+}
+img {
+  width: 100%;
+}
+
+/* Navbar  */
+nav {
+  background-color: #4243435b;
+}
+.navbar .nav-link.active {
+  color: #e65f78 !important;
+}
+/* Start Header */
+header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    h2 {
+      font-size: 55px;
+      &::after {
+        content: "";
+        animation: typing 8s infinite;
+      }
+    }
+    & p:last-of-type {
+      max-width: 500px;
+    }
+    button {
+      padding: 10px 30px;
+      &:hover {
+        background-color: #fff;
+        a {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .icon {
+    top: 35%;
+    width: 40px;
+    height: 40px;
+    background-color: #2b2424;
+  }
+  .dot {
+    width: 40px;
+    height: 70px;
+    bottom: 70px;
+    transform: translateX(-50%);
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      width: 3px;
+      height: 10px;
+      background-color: #fff;
+    }
+  }
+}
+/* End Header */
+/* start About */
+section .icons i {
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+  &:hover {
+    color: #e65f78;
+    border-color: #e65f78 !important;
+    cursor: pointer;
+  }
+}
+/* End About */
+/* Start Client  */
+.carousel .carousel-indicators {
+  bottom: -50px !important;
+}
+.carousel .carousel-indicators button {
+  background-color: #e65f78 !important;
+  width: 30px;
+  height: 7px;
+  border-radius: 12px;
+}
+/* End Client  */
+
+/* Start Work  */
+
+.work .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.7s;
+}
+.inner img {
+  transition: 0.7s;
+}
+.layer .content {
+  transition: 0.7s;
+}
+.row .inner:hover .layer {
+  opacity: 1;
+}
+.row .inner:hover .content {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+.work .row .inner:hover img {
+  transform: scale(1.3);
+}
+.nav .nav-link {
+    color: #333 !important;
+}
+.nav .nav-item .active {
+    background-color: #e65f78 !important;
+    color: white !important;
+}
+/* End Work  */
+/* Start Portfoilio */
+.btn-form {
+    background-color: #e65f78 !important;
+    transition: 0.5s;
+}
+.btn-form:hover {
+    background-color: #e2284a !important;
+
+}
+/* End Portfoilio */
+/* Typing Animation */
+@keyframes typing{
+    0%{
+        content: " |";
+    }
+    3%{
+        content: " D|";
+    }
+    6%{
+        content: " De|";
+    }
+    9%{
+        content: " Des|";
+    }
+    12%{
+        content: " Desi|";
+    }
+    15%{
+        content: " Desig|";
+    }
+    18%{
+        content: " Design|";
+    }
+    21%{
+        content: " Designe|";
+    }
+    24%{
+        content: " Designer|";
+    }
+    27%{
+        content: " Designe|";
+    }
+    30%{
+        content: " Design|";
+    }
+    33%{
+        content: " Desig|";
+    }
+    36%{
+        content: " Desi|";
+    }
+    39%{
+        content: " Des|";
+    }
+    42%{
+        content: " De|";
+    }
+    45%{
+        content: " Dev|";
+    }
+    48%{
+        content: " Deve|";
+    }
+    51%{
+        content: " Devel|";
+    }
+    54%{
+        content: " Develo|";
+    }
+    57%{
+        content: " Develop|";
+    }
+    60%{
+        content: " Develope|";
+    }
+    63%{
+        content: " Developer|";
+    }
+    66%{
+        content: " Develope|";
+    }
+    69%{
+        content: " Develop|";
+    }
+    73%{
+        content: " Develo|";
+    }
+    77%{
+        content: " Devel|";
+    }
+    83%{
+        content: " Deve|";
+    }
+    87%{
+        content: " Dev|";
+    }
+    91%{
+        content: " De|";
+    }
+    94%{
+        content: "D|";
+    }
+    100%{
+        content: " |";
+    }
+    100%{
+        content: " |";
+    }
+    
+}
