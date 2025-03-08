@@ -145,6 +145,15 @@ section .icons i {
     background-color: #e2284a !important;
 
 }
+.blog-card .image {
+  overflow: hidden;
+}
+.blog-card img {
+  transition: 0.7s;
+}
+.blog-card:hover img {
+transform: scale(1.2);
+}
 /* End Portfoilio */
 /* Typing Animation */
 @keyframes typing{
